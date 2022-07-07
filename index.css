@@ -1,13 +1,27 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    font-family: 'aaargh';
+    src: url('./res/fonts/Aaargh-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'abel';
+    src: url('./res/fonts/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --backgroundColor: grey;
 }
 
 body {
     background-color: grey;
-    font-family: "Montserrat", sans-serif;
+    font-family: "abel", sans-serif;
     font-weight: 50;
+    margin: 0;
 }
+
 header {
     width: 100vw;
     height: 20vh;
@@ -18,13 +32,47 @@ header {
     justify-content: center;
 
     color: white;
-    font-size: 48px;
 
-    margin-top: 50px;
-    margin-bottom: 40px;
+    font-family: 'aaargh', sans-serif;
+    font-size: 4vmax;
+
+    margin-top: 4vh;
+    margin-bottom: 0;
 }
 #creation-process-message {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: 1.1vmax;
+
+    padding-top: 2.5vh;
+    padding-bottom: 3vh;
+    margin: 0;
+    border-bottom: 2px solid white;
+}
+
+#tab-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    font-family: "abel", sans-serif;
+}
+.tabs {
+    margin: 0;
+    border-radius: 0;
+
+    width: 20vw;
+    height: 6vh;
+
+    font-family: abel, sans-serif;
+    font-size: 1vmax;
+
+    background: var(--backgroundColor);
+    border: 0;
+}
+.tabs:hover {
+
 }
