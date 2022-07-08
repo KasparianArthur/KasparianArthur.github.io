@@ -12,11 +12,12 @@
 }
 
 :root {
-    --backgroundColor: grey;
+    --backgroundColor: #d7d7d7;
+    color: black;
 }
 
 body {
-    background-color: grey;
+    background-color: var(--backgroundColor);
     font-family: "abel", sans-serif;
     font-weight: 50;
     margin: 0;
@@ -25,6 +26,18 @@ body {
 header {
     width: 100vw;
     height: 20vh;
+
+    /*Works without these 5, probably for older browsers*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    user-select: none;
+}
+header:hover {
+    cursor: default;
 }
 #name-title {
     display: flex;
@@ -62,17 +75,21 @@ header {
 }
 .tabs {
     margin: 0;
+    padding: 0;
     border-radius: 0;
 
     width: 20vw;
     height: 6vh;
 
     font-family: abel, sans-serif;
-    font-size: 1vmax;
+    font-size: 1.1vmax;
 
     background: var(--backgroundColor);
     border: 0;
 }
 .tabs:hover {
-
+    color: lightgrey;
+}
+.tabs:active {
+    background-color: dimgrey;
 }
