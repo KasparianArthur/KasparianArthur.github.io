@@ -11,85 +11,47 @@
     font-style: normal;
 }
 
-:root {
-    --backgroundColor: #d7d7d7;
-    color: black;
-}
-
-body {
-    background-color: var(--backgroundColor);
-    font-family: "abel", sans-serif;
-    font-weight: 50;
+body{
     margin: 0;
 }
 
 header {
-    width: 100vw;
-    height: 20vh;
-
-    /*Works without these 5, probably for older browsers*/
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-
-    user-select: none;
-}
-header:hover {
-    cursor: default;
-}
-#name-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: white;
-
-    font-family: 'aaargh', sans-serif;
-    font-size: 4vmax;
-
-    margin-top: 4vh;
-    margin-bottom: 0;
-}
-#creation-process-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 1.1vmax;
-
-    padding-top: 2.5vh;
-    padding-bottom: 3vh;
-    margin: 0;
-    border-bottom: 2px solid white;
-}
-
-#tab-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100vw;
-    font-family: "abel", sans-serif;
-}
-.tabs {
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+    background-color: #6a6d81;
+    border-right: #2b342f 3px solid;
 
     width: 20vw;
-    height: 6vh;
+    height: 100vh;
+    margin: 0;
+}
+
+#name-title{
+    margin: 0;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding: 24px 8px 16px 8px;
 
     font-family: abel, sans-serif;
-    font-size: 1.1vmax;
+    font-weight: 50;
+    font-size: 2.5vmax;
 
-    background: var(--backgroundColor);
+    white-space: nowrap;
+}
+
+.tabs{
+    background-color: rgba(1, 1, 1, 0);
     border: 0;
+
+    width: 20vw;
+    height: 5vh;
 }
-.tabs:hover {
-    color: lightgrey;
-}
-.tabs:active {
-    background-color: dimgrey;
+#tabs-div{
+    /*display: flex;
+    align-content: center;
+    justify-content: center;*/
+
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
 }
